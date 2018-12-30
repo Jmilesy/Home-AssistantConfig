@@ -1,0 +1,6 @@
+fans:
+  name: Fans
+  control: hidden
+  entities:
+    - binary_sensor.rack_fan
+    - binary_sensor.rad_fan

@@ -1,0 +1,10 @@
+﻿- platform: mqtt
+  name: Dining Room Temperature
+  state_topic: "room/temp"
+  unit_of_measurement: '°C'
+  device class: temperature
+- platform: mqtt
+  name: Dining Room Humidity
+  state_topic: "room/hum"
+  unit_of_measurement: '%'
+  device class: humidity

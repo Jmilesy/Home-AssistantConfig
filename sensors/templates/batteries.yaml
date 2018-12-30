@@ -1,0 +1,50 @@
+- platform: template
+  sensors:
+    battery_jon:
+      friendly_name: "Jon Battery"
+      unit_of_measurement: "%"
+      icon_template: >-
+        {% if is_state_attr('device_tracker.jon', 'battery_charging', true) %}
+          {% set battery_charge = 'charging-' %}
+        {% endif %}
+        {% set battery_level = state_attr('device_tracker.jon', 'battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+          mdi:battery-unknown
+        {% else %}
+          {% if battery_round >= 100 %}
+            mdi:battery
+          {% elif battery_round > 0 %}
+            mdi:battery-{{battery_charge}}{{ battery_round }}
+          {% else %}
+            mdi:battery-alert
+          {% endif %}
+        {% endif %}
+      value_template: >
+        {{ state_attr('device_tracker.jon', 'battery')}} 
+
+    battery_nat:
+      friendly_name: "Natalie Battery"
+      unit_of_measurement: "%"
+      icon_template: >-
+        {% if is_state_attr('device_tracker.nat', 'battery_charging', true) %}
+          {% set battery_charge = 'charging-' %}
+        {% endif %}
+        {% set battery_level = state_attr('device_tracker.nat', 'battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+          mdi:battery-unknown
+        {% else %}
+          {% if battery_round >= 100 %}
+            mdi:battery
+          {% elif battery_round > 0 %}
+            mdi:battery-{{battery_charge}}{{ battery_round }}
+          {% else %}
+            mdi:battery-alert
+          {% endif %}
+        {% endif %}
+      value_template: >
+        {{ state_attr('device_tracker.nat', 'battery')}} 
+
+
+ 

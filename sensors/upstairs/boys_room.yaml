@@ -1,0 +1,10 @@
+﻿- platform: mqtt
+  name: Boys Temperature
+  state_topic: "boys_room/temp"
+  unit_of_measurement: '°C'
+  device class: temperature
+- platform: mqtt
+  name: Boys Humidity
+  state_topic: "boys_room/hum"
+  unit_of_measurement: '%'
+  device class: humidity

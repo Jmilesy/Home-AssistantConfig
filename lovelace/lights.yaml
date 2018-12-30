@@ -1,0 +1,11 @@
+{% macro light_pe(switch, image) %}
+{ type: picture-entity,
+  entity: {{switch}},
+  image: !resource {{image}},
+  show_state: false,
+  tap_action: toggle,
+}
+{% endmacro %}
+type: vertical-stack
+cards:
+  - {{ light_pe('light.0720005768c63acb609c', 'images/bedroom.jpg') }}

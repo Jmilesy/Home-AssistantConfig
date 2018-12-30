@@ -1,0 +1,11 @@
+default_view:
+  view: yes
+  name: Home
+  entities:
+    - group.people
+    - group.temps
+    - group.lights
+    - group.switches
+    - group.weather_summary
+    - group.plex_summary
+    - group.fans

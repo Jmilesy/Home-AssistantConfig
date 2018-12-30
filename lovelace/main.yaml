@@ -1,0 +1,13 @@
+﻿title: My Awesome Home
+resources:
+  - url: !resource monster-card/monster-card.js
+    type: js
+
+views:
+  - title: Home
+    id: home
+    cards:
+      - type: picture-entity
+        image: http://placekitten.com/100/100
+        entity: light.02150034807d3a7693fd
+  - !include lights.yaml

@@ -1,0 +1,6 @@
+- platform: mqtt
+  name: "Landing Pir"
+  state_topic: "Landing/pir1"
+  payload_on: "movement"
+  payload_off: "clear"
+  device_class: motion

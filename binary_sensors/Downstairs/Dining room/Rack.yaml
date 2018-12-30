@@ -1,0 +1,5 @@
+- platform: mqtt
+  name: Rack Fan
+  state_topic: "rack/rackfan"
+  payload_on: "On "
+  payload_off: "OFF"

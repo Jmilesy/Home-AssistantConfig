@@ -1,0 +1,9 @@
+people:
+  name: Awsome people
+  control: hidden
+  entities:
+    - device_tracker.jon
+    - sensor.battery_jon
+    - device_tracker.nat
+    - device_tracker.nat
+    - sensor.battery_nat

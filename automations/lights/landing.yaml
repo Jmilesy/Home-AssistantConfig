@@ -1,0 +1,78 @@
+- alias: 'light off'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.landing_pir
+    to: 'off'
+    for:
+      minutes: 1
+  action:
+    service: light.turn_off
+    entity_id: light.02150034807d3a7693fd
+
+- alias: 'Landing Pir night'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.landing_pir
+    to: 'on'
+  condition:
+    - condition: time
+      after: '18:30:00'
+      before: '05:59:59'
+  action:
+    service: light.turn_on
+    data:
+      brightness: 50
+      rgb_color: [0, 0, 255]
+      entity_id:
+        - light.02150034807d3a7693fd
+
+- alias: 'Landing Pir evening'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.landing_pir
+    to: 'on'
+  condition:
+    - condition: time
+      after: '18:00:00'
+      before: '18:29:59'
+  action:
+    service: light.turn_on
+    data:
+      brightness: 150
+      rgb_color: [255, 255, 255]
+      entity_id:
+        - light.02150034807d3a7693fd
+
+- alias: 'Landing Pir early morning'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.landing_pir
+    to: 'on'
+  condition:
+    - condition: time
+      after: '06:00:00'
+      before: '06:14:59'
+  action:
+    service: light.turn_on
+    data:
+      brightness: 150
+      rgb_color: [255, 255, 255]
+      entity_id:
+        - light.02150034807d3a7693fd
+
+- alias: 'Landing Pir day'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.landing_pir
+    to: 'on'
+  condition:
+    - condition: time
+      after: '06:15:00'
+      before: '17:59:59'
+  action:
+    service: light.turn_on
+    data:
+      brightness: 150
+      rgb_color: [255, 255, 255]
+      entity_id:
+        - light.02150034807d3a7693fd

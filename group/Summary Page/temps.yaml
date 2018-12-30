@@ -1,0 +1,9 @@
+temps:
+  name: Tempreture Summary
+  control: hidden
+  entities:
+    - sensor.boys_temperature
+    - sensor.dining_room_temperature
+    - sensor.landing_temperature
+    - sensor.rack_temperature
+    - sensor.radiator_temperature

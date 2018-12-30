@@ -1,0 +1,7 @@
+lights:
+  name: Lights
+  control: hidden
+  entities:
+    - light.02150034807d3a7693fd
+    - light.0220040268c63aaf9374
+    - light.0720005768c63acb609c

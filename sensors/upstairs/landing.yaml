@@ -1,0 +1,10 @@
+﻿- platform: mqtt
+  name: Landing Temperature
+  state_topic: "Landing/temp"
+  unit_of_measurement: '°C'
+  device class: temperature
+- platform: mqtt
+  name: Landing Humidity
+  state_topic: "Landing/hum"
+  unit_of_measurement: '%'
+  device class: humidity

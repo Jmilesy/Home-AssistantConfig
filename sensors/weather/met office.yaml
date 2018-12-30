@@ -1,0 +1,14 @@
+  - platform: metoffice
+    api_key: 3af5a862-c972-409b-9991-14296e79810e
+    monitored_conditions:
+      - weather
+      - temperature
+      - feels_like_temperature
+      - wind_speed
+      - wind_direction
+      - wind_gust
+      - visibility
+      - visibility_distance
+      - uv
+      - precipitation
+      - humidity

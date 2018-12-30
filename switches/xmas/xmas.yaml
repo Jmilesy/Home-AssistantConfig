@@ -1,0 +1,23 @@
+﻿  - platform: mqtt
+    name: "Bedroom Switch"
+    state_topic: "switch/christmas/bedroom"
+    command_topic: "switch/christmas/bedroom"
+    #availability_topic: "outTopic"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    retain: true
+
+  - platform: mqtt
+    name: "Lounge Switch"
+    state_topic: "switch/christmas/lounge"
+    command_topic: "switch/christmas/lounge"
+    #availability_topic: "outTopic"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    retain: true

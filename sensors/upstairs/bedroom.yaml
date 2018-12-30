@@ -1,0 +1,5 @@
+﻿- platform: mqtt
+  name: Radiator Temperature
+  state_topic: "bedroom/Radtemperature"
+  unit_of_measurement: '°C'
+  device class: temperature

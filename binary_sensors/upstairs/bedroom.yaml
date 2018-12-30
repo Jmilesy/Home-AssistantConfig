@@ -1,0 +1,6 @@
+﻿- platform: mqtt
+  name: Rad Fan
+  state_topic: "bedroom/Radfan"
+  payload_on: "On "
+  payload_off: "OFF"
+  hidden: true

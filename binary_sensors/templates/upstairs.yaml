@@ -1,0 +1,32 @@
+﻿- platform: template
+  sensors:
+    rad_fan:
+      friendly_name: "Radiator Fan"
+      value_template: >-
+        {% if is_state('binary_sensor.rad_fan_2', 'on') %}
+          On
+        {% else %}
+          Off
+        {% endif %}
+      icon_template: >-
+        {% if is_state('binary_sensor.rad_fan_2', 'on') %}
+          mdi:fan
+        {% else %}
+          mdi:fan-off
+        {% endif %}
+      
+    rack_fan:
+      friendly_name: "Rack Fan"
+      value_template: >-
+        {% if is_state('binary_sensor.rack_fan_2', 'on') %}
+          On
+        {% else %}
+          Off
+        {% endif %}
+      icon_template: >-
+        {% if is_state('binary_sensor.rack_fan_2', 'on') %}
+          mdi:fan
+        {% else %}
+          mdi:fan-off
+        {% endif %}
+    

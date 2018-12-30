@@ -1,0 +1,6 @@
+- platform: mqtt
+  name: "Dining Room Pir"
+  state_topic: "Diningroom/pir"
+  payload_on: "movement"
+  payload_off: "clear"
+  device_class: motion

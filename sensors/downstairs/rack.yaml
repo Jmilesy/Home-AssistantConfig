@@ -1,0 +1,5 @@
+﻿- platform: mqtt
+  name: Rack Temperature
+  state_topic: "rack/temp"
+  unit_of_measurement: '°C'
+  device class: temperature
