@@ -27,7 +27,7 @@ http:
   api_password: !secret http_password
 
 duckdns:
-  domain: mileshome.duckdns.org
+  domain: !secret duck_dns_address
   access_token: !secret duck_DNS  
 
 # Checks for available updates
