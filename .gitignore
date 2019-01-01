@@ -1,4 +1,4 @@
-!*.yaml
+﻿!*.yaml
 !.gitignore
 !*.md
 
@@ -34,4 +34,4 @@ __pycache__
 *.txt
 *.google.token
 .google.token 
-home-assistant_v2.*
+
