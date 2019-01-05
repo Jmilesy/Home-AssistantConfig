@@ -112,6 +112,11 @@ device_tracker:
     max_update_wait:
       minutes: 45
   - platform: sky_hub
+    host: 192.168.1.1
+    interval_seconds: 10
+    consider_home: 180
+    new_device_defaults:
+      track_new_devices: false
 
 binary_sensor: !include_dir_merge_list binary_sensors
 sensor: !include_dir_merge_list sensors
